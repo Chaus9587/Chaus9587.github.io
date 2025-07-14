@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style-tutorials.css">
+    <link rel="shortcut icon" href="../../img/web_icon.svg" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <div class="fixed">
+        <div class="nav">
+            <a href="../../index.html">Home</a>
+            <a href="../tutorials.html" style="text-decoration: underline;">Tutorials</a>
+        </div>
+    </div>
+    <div class="container">
+        <section>
+            <h1>Flexbox - Flex direction and wrapping of flex items</h1>
+            <article>
+                <h2>CSS "flex-direction" property</h2>
+                <div>
+                    <p>
+                        To increase the responsiveness of flex items, there are two flexbox properties that can achieve that.
+                        They are <code class="code-inline">flex-direction</code> and <code class="code-inline">flex-wrap</code>.
+                    </p>
+                    <p>Consider the follow HTML and CSS code:</p>
+                    <div class="code">
+                        <code>
+                            <<span class="blue">div</span> class="<span class="orange">flex-container</span>"><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<<span class="blue">div</span> class="<span class="orange">flex-item</span>">1<&#47;<span class="blue">div</span>><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<<span class="blue">div</span> class="<span class="orange">flex-item</span>">2<&#47;<span class="blue">div</span>><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<<span class="blue">div</span> class="<span class="orange">flex-item</span>">3<&#47;<span class="blue">div</span>><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<<span class="blue">div</span> class="<span class="orange">flex-item</span>">4<&#47;<span class="blue">div</span>><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<<span class="blue">div</span> class="<span class="orange">flex-item</span>">5<&#47;<span class="blue">div</span>><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<<span class="blue">div</span> class="<span class="orange">flex-item</span>">6<&#47;<span class="blue">div</span>><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<<span class="blue">div</span> class="<span class="orange">flex-item</span>">7<&#47;<span class="blue">div</span>><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<<span class="blue">div</span> class="<span class="orange">flex-item</span>">8<&#47;<span class="blue">div</span>><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<<span class="blue">div</span> class="<span class="orange">flex-item</span>">9<&#47;<span class="blue">div</span>><br>
+                            <&#47;<span class="blue">div</span>>
+                        </code>
+                    </div><br>
+
+                    <p>CSS:</p>
+                    <div class="code">
+                        <code>
+                            .flex-container { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;display: <span class="orange">flex</span>; <br>
+                            } <br>
+                            .flex-item { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;padding: <span class="orange">10px 15px</span>; <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;margin: <span class="orange">5px</span>; <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;width: <span class="orange">fit-content</span>; <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;height: <span class="orange">fit-content</span>; <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;background-color: <span class="orange">palevioletred</span>; <br>    
+                            }
+                        </code>
+                    </div><br>
+                    <iframe src="../../tutorials/flexbox/demo2.html"  frameborder="0"></iframe><br>
+                </div>
+                <!-- Examples (flex-direction) -->
+                <div>
+                    <p>Let's see some examples of <code class="code-inline">flex-direction</code>.</p><br>
+                    <p>CSS: <code class="code-inline">(row) (default)</code></p>
+                    <div class="code">
+                        <code>
+                            .flex-container { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;flex-direction: <span class="orange">row</span>; <br>
+                            } <br>
+                        </code>
+                    </div>
+                    <button type="button" onclick="openFlexFdDemo(0)">Output</button><br><br>
+                    
+                    <p>CSS: <code class="code-inline">(row-reverse)</code></p>
+                    <div class="code">
+                        <code>
+                            .flex-container { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;flex-direction: <span class="orange">row-reverse</span>; <br>
+                            } <br>
+                        </code>
+                    </div>
+                    <button type="button" onclick="openFlexFdDemo(1)">Output</button><br><br>
+
+                    <p>CSS: <code class="code-inline">(column)</code></p>
+                    <div class="code">
+                        <code>
+                            .flex-container { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;flex-direction: <span class="orange">column</span>; <br>
+                            } <br>
+                        </code>
+                    </div>
+                    <button type="button" onclick="openFlexFdDemo(2)">Output</button><br><br>
+
+                    <p>CSS: <code class="code-inline">(column-reverse)</code></p>
+                    <div class="code">
+                        <code>
+                            .flex-container { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;flex-direction: <span class="orange">column-reverse</span>; <br>
+                            } <br>
+                        </code>
+                    </div>
+                    <button type="button" onclick="openFlexFdDemo(3)">Output</button><br><br>
+                    <p>
+                        It is worth mentioning that when the property <code class="code-inline">flex-direction: column/column-reverse</code>
+                        is used, the effect of <code class="code-inline">justify-content</code> and <code class="code-inline">align-items</code> will be exchanged.
+                        (i.e <code class="code-inline">justify-content</code> will align flex items vertically, vice versa.).
+                    </p>
+                </div><br>
+                <div>
+                    <h2>Syntax</h2>
+                    <div class="code">
+                        <code>
+                            flex-direction: <span class="orange">row</span>; <br>
+                            flex-direction: <span class="orange">row-reverse</span>; <br>
+                            flex-direction: <span class="orange">column</span>; <br>
+                            flex-direction: <span class="orange">column-reverse</span>; <br><br>
+                            flex-direction: <span class="orange">inherit</span>;<br>
+                            flex-direction: <span class="orange">initial</span>;<br>
+                            flex-direction: <span class="orange">unset</span>;<br>
+                        </code>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <footer>
+            <a href="./flex-shrink.html" class="button">Previous section</a>
+            <a href="./flex-wrap.html" class="button">Next section</a>
+        </footer>
+    </div>
+</body>
+</html>

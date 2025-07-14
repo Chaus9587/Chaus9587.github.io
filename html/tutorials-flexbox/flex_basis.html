@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style-tutorials.css">
+    <link rel="shortcut icon" href="../../img/web_icon.svg" type="image/x-icon">
+    <title>flex-basis | CSS Flexbox</title>
+</head>
+<body>
+    <div class="fixed">
+        <div class="nav">
+            <a href="../../index.html">Home</a>
+            <a href="../tutorials.html" style="text-decoration: underline;">Tutorials</a>
+        </div>
+    </div>
+    <div class="container">
+        <section>
+            <h1>Flexbox - Controlling the width of flex items</h1>
+            <article>
+                <div>
+                    <h2>CSS "flex-basis" property</h2>
+                    <div>
+                    <p>
+                        You may have learnt the basic <code class="code-inline">(min/max)-width</code> property in CSS.
+                        However, in CSS flexbox, there are some other way to control the width of flex items in a flex container.
+                    </p><br>
+                    <p>Consider the code below as the current styling of the flex items and the flex container.</p>
+                    <p>HTML:</p>
+                    <div class="code">
+                        <code>
+                            <<span class="blue">div</span> class="<span class="orange">flex-container</span>"><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<<span class="blue">div</span> class="<span class="orange">flex-item</span>">1<&#47;<span class="blue">div</span>><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<<span class="blue">div</span> class="<span class="orange">flex-item</span>">2<&#47;<span class="blue">div</span>><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<<span class="blue">div</span> class="<span class="orange">flex-item</span>">3<&#47;<span class="blue">div</span>><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<<span class="blue">div</span> class="<span class="orange">flex-item</span>">4<&#47;<span class="blue">div</span>><br>
+                            <&#47;<span class="blue">div</span>>
+                        </code>
+                    </div><br>
+
+                    <p>CSS:</p>
+                    <div class="code">
+                        <code>
+                            .flex-container { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;display: <span class="orange">flex</span>; <br>
+                            } <br>
+                            .flex-item { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;padding: <span class="orange">10px 15px</span>; <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;margin: <span class="orange">0 5px</span>; <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;height: <span class="orange">fit-content</span>; <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;background-color: <span class="orange">cornflowerblue</span>; <br>    
+                            }
+                        </code>
+                    </div><br>
+
+                    <p>Output:</p>
+                    <iframe src="../../tutorials/flexbox/demo1.html"></iframe>
+                </div><br>
+                <div>
+                    <p>
+                        Similar to <code class="code-inline">width</code>, <code class="code-inline">flex-basis</code> set the initial length of flex items.
+                    </p>
+                    <p>CSS:</p>
+                    <div class="code">
+                        <code>
+                            .flex-item { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;flex-basis: <span class="orange">50px</span>; <br>
+                            } <br>
+                        </code>
+                    </div><br>
+
+                    <p>Output:</p>
+                    <iframe src="../../tutorials/flexbox/flex-basis/demo0.html"></iframe>
+                </div><br>
+                </div>
+                <div>
+                    <h2>Syntax</h2>
+                    <div class="code">
+                        <code>
+                            flex-basis: <span class="orange">('width')</span>;<br><br>
+                            flex-basis: <span class="orange">min-content</span>;<br>
+                            flex-basis: <span class="orange">max-content</span>;<br>
+                            flex-basis: <span class="orange">fit-content</span>;<br><br>
+                            flex-basis: <span class="orange">content</span>;<br><br>
+                            flex-basis: <span class="orange">inherit</span>;<br>
+                            flex-basis: <span class="orange">initial</span>;<br>
+                            flex-basis: <span class="orange">unset</span>;<br>
+                        </code>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <footer>
+            <a href="./align-self.html" class="button">Previous section</a>
+            <a href="./flex_grow.html" class="button">Next section</a>
+        </footer>
+    </div>
+</body>
+</html>

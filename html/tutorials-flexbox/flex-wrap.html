@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style-tutorials.css">
+    <link rel="shortcut icon" href="../../img/web_icon.svg" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <div class="fixed">
+        <div class="nav">
+            <a href="../../index.html">Home</a>
+            <a href="../tutorials.html" style="text-decoration: underline;">Tutorials</a>
+        </div>
+    </div>
+    <div class="container">
+        <section>
+            <h1>Flexbox - Flex direction and wrapping of flex items</h1>
+            <article>
+                <h2>CSS "flex-wrap" property</h2>
+                <div>
+                    <p><code class="code-inline">flex-wrap</code> determines the wrap direction when the flex container size is changing.</p><br>
+                    <p>Adjust the pop-up window size if necessary to see the effect.</p>
+                    <p>CSS: <code class="code-inline">(nowrap) (default)</code></p>
+                    <div class="code">
+                        <code>
+                            .flex-container { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;flex-direction: <span class="orange">row</span>; <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;flex-wrap: <span class="orange">nowrap</span>; <br>
+                            } <br>
+                        </code>
+                    </div>
+                    <button type="button" onclick="openFlexFwDemo(0)">Output</button><br><br>
+
+                    <p>CSS: <code class="code-inline">(wrap)</code></p>
+                    <div class="code">
+                        <code>
+                            .flex-container { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;flex-direction: <span class="orange">row</span>; <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;flex-wrap: <span class="orange">wrap</span>; <br>
+                            } <br>
+                        </code>
+                    </div>
+                    <button type="button" onclick="openFlexFwDemo(1)">Output</button><br><br>
+
+                    <p>CSS: <code class="code-inline">(wrap-reverse)</code></p>
+                    <div class="code">
+                        <code>
+                            .flex-container { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;flex-direction: <span class="orange">row</span>; <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;flex-wrap: <span class="orange">wrap-reverse</span>; <br>
+                            } <br>
+                        </code>
+                    </div>
+                    <button type="button" onclick="openFlexFwDemo(2)">Output</button><br><br>
+                </div>
+                <div>
+                    <h2>Syntax</h2>
+                    <div class="code">
+                        <code>
+                            flex-wrap: <span class="orange">nowrap</span>; <br>
+                            flex-wrap: <span class="orange">wrap</span>; <br>
+                            flex-wrap: <span class="orange">wrap-reverse</span>; <br><br>
+                            flex-wrap: <span class="orange">inherit</span>;<br>
+                            flex-wrap: <span class="orange">initial</span>;<br>
+                            flex-wrap: <span class="orange">unset</span>;<br>
+                        </code>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <footer>
+            <a href="./flex-direction.html" class="button">Previous section</a>
+            <a href="" class="button" style="text-decoration: line-through;">Next section</a>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style-tutorials.css">
+    <link rel="shortcut icon" href="../../img/web_icon.svg" type="image/x-icon">
+    <title>justify-content | CSS Flexbox</title>
+</head>
+<body>
+    <div class="fixed">
+        <div class="nav">
+            <a href="../../index.html">Home</a>
+            <a href="../tutorials.html" style="text-decoration: underline;">Tutorials</a>
+        </div>
+    </div>
+    <div class="container">
+        <section>
+            <h1>Flexbox - Aligning multiple flex items</h1>
+            <article>
+                <div>
+                    <h2>CSS "justify-content" property</h2>
+                    <p>
+                        <code class="code-inline">justify-content</code> is used to align flex items horizontally. <br>
+                        Take a look at the examples and the respective output below. <br>
+                    </p><br>
+                    <p>We will use the flex container and it's style properties that we just created in the "How to set up a Flexbox container" section.</p><br>
+
+                    <p>This is the default properties of <code class="code-inline">justify-content</code>.</p>
+                    <p>CSS: <code class="code-inline">(start/flex-start)</code></p>
+                    <div class="code">
+                        <code>
+                            .flex-container { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;justify-content: <span class="orange">start/flex-start</span>; <br>
+                            } <br>
+                        </code>
+                    </div>
+                    <p>Output: </p>
+                    <iframe src="../../tutorials/flexbox/justify-content/demo0.html"></iframe><br>
+
+                    <p>CSS: <code class="code-inline">(end/flex-end)</code></p>
+                    <div class="code">
+                        <code>
+                            .flex-container { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;justify-content: <span class="orange">end/flex-end</span>; <br>
+                            } <br>
+                        </code>
+                    </div>
+                    <p>Output: </p>
+                    <iframe src="../../tutorials/flexbox/justify-content/demo1.html"></iframe><br>
+
+                    <p>CSS: <code class="code-inline">(space-between)</code></p>
+                    <div class="code">
+                        <code>
+                            .flex-container { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;justify-content: <span class="orange">space-between</span>; <br>
+                            } <br>
+                        </code>
+                    </div>
+                    <p>Output: </p>
+                    <iframe src="../../tutorials/flexbox/justify-content/demo2.html"></iframe><br>
+
+                    <p>CSS: <code class="code-inline">(space-around)</code></p>
+                    <div class="code">
+                        <code>
+                            .flex-container { <br>
+
+                                &nbsp;&nbsp;&nbsp;&nbsp;justify-content: <span class="orange">space-around</span>; <br>
+                            } <br>
+                        </code>
+                    </div>
+                    <p>Output:</p>
+                    <iframe src="../../tutorials/flexbox/justify-content/demo3.html"></iframe><br>
+
+                    <p>CSS: <code class="code-inline">(space-evenly)</code></p>
+                    <div class="code">
+                        <code>
+                            .flex-container { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;justify-content: <span class="orange">space-evenly</span>; <br>
+                            } <br>
+                        </code>
+                    </div>
+                    <p>Output:</p>
+                    <iframe src="../../tutorials/flexbox/justify-content/demo4.html"></iframe><br>
+
+                    <p>CSS: <code class="code-inline">(center)</code></p>
+                    <div class="code">
+                        <code>
+                            .flex-container { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;justify-content: <span class="orange">center</span>; <br>
+                            } <br>
+                        </code>
+                    </div>
+                    <p>Output:</p>
+                    <iframe src="../../tutorials/flexbox/justify-content/demo5.html"></iframe><br>
+                </div><br>
+                <div>
+                        
+                    <h2>Syntax</h2>
+                    <div class="code">
+                        <code>
+                            justify-content: <span class="orange">center</span>; <br>
+                            justify-content: <span class="orange">start</span>; <br>
+                            justify-content: <span class="orange">end</span>; <br>
+                            justify-content: <span class="orange">flex-start</span>; <br>
+                            justify-content: <span class="orange">flex-end</span>; <br>
+                            justify-content: <span class="orange">left</span>; <br> 
+                            justify-content: <span class="orange">right</span>; <br><br>
+
+                            justify-content: <span class="orange">space-between</span>; <br>
+                            justify-content: <span class="orange">space-around</span>; <br>
+                            justify-content: <span class="orange">space-evenly</span>; <br>
+                            justify-content: <span class="orange">stretch</span>;<br><br>
+
+                            justify-content: <span class="orange">inherit</span>; <br>
+                            justify-content: <span class="orange">initial</span>; <br>
+                            justify-content: <span class="orange">unset</span>; <br>
+                        </code>             
+                    </div>
+                </div>
+            </article>
+        </section>
+        <footer>
+            <a href="" class="button" style="text-decoration: line-through;">Previous section</a>
+            <a href="./align-items.html" class="button">Next section</a>
+        </footer>
+    </div>
+</body>
+</html>

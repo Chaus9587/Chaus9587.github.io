@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style-tutorials.css">
+    <link rel="shortcut icon" href="../../img/web_icon.svg" type="image/x-icon">
+    <title>align-items | CSS Flexbox</title>
+</head>
+<body>
+    <div class="fixed">
+        <div class="nav">
+            <a href="../../index.html">Home</a>
+            <a href="../tutorials.html" style="text-decoration: underline;">Tutorials</a>
+        </div>
+    </div>
+    <div class="container">
+        <section>
+            <h1>Flexbox - Aligning multiple flex items</h1>
+            <article>
+                <h2>CSS "align-items" property</h2>
+                <div>
+                    <p>
+                        <code class="code-inline">align-items</code> is used to align flex items vertically.
+                    </p>
+                    <p>Consider the CSS code below is the current properties of the flex container and individual flex item.</p><br>
+                    <p>(Note: the <code class="code-inline">width/height: fit-content</code> property are used to control the size of flex items and prevent them from accidental stretch through the whole width/height of the flex container.)</p><br>
+                    <p>CSS:</p>
+                    <div class="code">
+                        <code>
+                            .flex-container { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;display: <span class="orange">flex</span>; <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;height: <span class="orange">100vh</span>; <br>
+                            } <br>
+                            .flex-item { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;padding: <span class="orange">10px 15px</span>; <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;margin: <span class="orange">0 5px</span>; <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;height: <span class="orange">fit-content</span>; <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;background-color: <span class="orange">rosybrown</span>; <br>    
+                            } <br>
+                            .flex-item:<span class="blue">nth-child(<span class="orange">2</span>)</span> { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;padding: <span class="orange">15px</span>; <br>
+                            } <br>
+                            .flex-item:<span class="blue">nth-child(<span class="orange">4</span>)</span> { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;padding: <span class="orange">20px 15px</span>; <br>
+                            }
+                        </code>
+                    </div><br>
+
+                    <p>Here is the different examples of <code class="code-inline">align-items</code>:</p>
+                    <p>CSS: <code class="code-inline">(start/flex-start) (default)</code></p>
+                    <div class="code">
+                        <code>
+                            .flex-container { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;align-items: <span class="orange">start/flex-start</span>;<br>
+                            } <br>
+                        </code>
+                    </div>
+                    <p>Output: </p>
+                    <iframe src="../../tutorials/flexbox/align-items/demo0.html"></iframe><br>
+
+                    <p>CSS: <code class="code-inline">(end/flex-end)</code></p>
+                    <div class="code">
+                        <code>
+                            .flex-container { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;align-items: <span class="orange">end/flex-end</span>;<br>
+                            } <br>
+                        </code>
+                    </div>
+                    <p>Output: </p>
+                    <iframe src="../../tutorials/flexbox/align-items/demo1.html"></iframe><br>
+
+                    <p>CSS: <code class="code-inline">(baseline)</code></p>
+                    <div class="code">
+                        <code>
+                            .flex-container { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;align-items: <span class="orange">baseline</span>;<br>
+                            } <br>
+                        </code>
+                    </div>
+                    <p>Output: </p>
+                    <iframe src="../../tutorials/flexbox/align-items/demo2.html"></iframe><br>
+
+                    <p>CSS: <code class="code-inline">(center)</code></p>
+                    <div class="code">
+                        <code>
+                            .flex-container { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;align-items: <span class="orange">center</span>;<br>
+                            } <br>
+                        </code>
+                    </div><br>
+                    <p>Output: </p>
+                    <iframe src="../../tutorials/flexbox/align-items/demo3.html"></iframe>
+                </div><br>     
+                <div>
+                    <h2>Syntax</h2>
+                    <div class="code">
+                        <code>
+                            align-items: <span class="orange">center</span>;<br>
+                            align-items: <span class="orange">start</span>;<br>
+                            align-items: <span class="orange">end</span>;<br>
+                            align-items: <span class="orange">flex-start</span>;<br>
+                            align-items: <span class="orange">flex-end</span>;<br><br>
+
+                            align-items: <span class="orange">baseline</span>;<br>
+                            align-items: <span class="orange">first baseline</span>;<br>
+                            align-items: <span class="orange">last baseline</span>;<br><br>
+
+                            align-items: <span class="orange">inherit</span>;<br>
+                            align-items: <span class="orange">initial</span>;<br>
+                            align-items: <span class="orange">unset</span>;<br>
+                        </code>
+                    </div>
+                </div>           
+            </article>
+        </section>
+        <footer>
+            <a href="./justify-content.html" class="button">Previous section</a>
+            <a href="./align-self.html" class="button">Next section</a>
+        </footer>
+    </div>
+</body>
+</html>

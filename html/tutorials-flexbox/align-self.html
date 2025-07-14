@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style-tutorials.css">
+    <link rel="shortcut icon" href="../../img/web_icon.svg" type="image/x-icon">
+    <title>align-items | CSS Flexbox</title>
+</head>
+<body>
+    <div class="fixed">
+        <div class="nav">
+            <a href="../../index.html">Home</a>
+            <a href="../tutorials.html" style="text-decoration: underline;">Tutorials</a>
+        </div>
+    </div>
+    <div class="container">
+        <section>
+            <h1>Flexbox - Aligning specific flex items</h1>
+            <article>
+                <div>
+                    <h2>CSS "align-self" property</h2>
+                    <p>
+                        In some cases, developers may want to specify the location of a flex item.
+                        Which <code class="code-inline">align-self</code> can be used in this case.
+                        They will overwrite <code class="code-inline">align-items</code>.
+                    </p><br>
+                    <p>Some examples of <code class="code-inline">align-self</code>. We will continue to use the CSS properties of the flex-contatiner and flex-items in the "How to set up a Flexbox container" section.</p><br>
+
+                    <p>CSS:</p>
+                    <div class="code">
+                        <code>
+                            .flex-container { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;align-items: <span class="orange">center</span>; <br>
+                            } <br>
+                            .flex-item:<span class="blue">nth-child(<span class="orange">2</span>)</span> { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;align-self: <span class="orange">flex-start</span>; <br>
+                            } <br>
+                        </code>
+                    </div><br>
+                    <p>Output:</p>
+                    <iframe src="../../tutorials/flexbox/align-self/demo0.html"></iframe><br>
+
+                    <p>CSS:</p>
+                    <div class="code">
+                        <code>
+                            .flex-container { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;align-items: <span class="orange">flex-start</span>; <br>
+                            } <br>
+                            .flex-item:<span class="blue">nth-child(<span class="orange">2</span>)</span> { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;align-self: <span class="orange">flex-end</span>; <br>
+                            } <br>
+                        </code>
+                    </div><br>
+                    <p>Output:</p>
+                    <iframe src="../../tutorials/flexbox/align-self/demo1.html"></iframe><br>
+                </div>
+                <div>
+                    <h2>Syntax</h2>
+                    <div class="code">
+                        <code>
+                            align-self: <span class="orange">center</span>;<br>
+                            align-self: <span class="orange">start</span>;<br>
+                            align-self: <span class="orange">end</span>;<br>
+                            align-self: <span class="orange">flex-start</span>;<br>
+                            align-self: <span class="orange">flex-end</span>;<br><br>
+
+                            align-self: <span class="orange">baseline</span>;<br>
+                            align-self: <span class="orange">first baseline</span>;<br>
+                            align-self: <span class="orange">last baseline</span>;<br><br>
+
+                            align-self: <span class="orange">inherit</span>;<br>
+                            align-self: <span class="orange">initial</span>;<br>
+                            align-self: <span class="orange">unset</span>;<br>
+                        </code>
+                    </div>
+                </div>  
+            </article>
+        </section>
+        <footer>
+            <a href="./align-items.html" class="button">Previous section</a>
+            <a href="./flex_basis.html" class="button">Next section</a>
+        </footer>
+    </div>
+</body>
+</html>

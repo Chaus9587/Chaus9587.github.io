@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style-tutorials.css">
+    <link rel="shortcut icon" href="../../img/web_icon.svg" type="image/x-icon">
+    <title>flex-basis | CSS Flexbox</title>
+</head>
+<body>
+    <div class="fixed">
+        <div class="nav">
+            <a href="../../index.html">Home</a>
+            <a href="../tutorials.html" style="text-decoration: underline;">Tutorials</a>
+        </div>
+    </div>
+    <div class="container">
+        <section>
+            <h1>Flexbox - Controlling the width of flex items</h1>
+            <article>
+                <div>
+                    <h2>CSS "flex-shrink" property</h2>
+                    <p>
+                        <code class="code-inline">flex-grow/flex-shrink</code> are used to set the width ratio of flex items.
+                        Note that the <code class="code-inline">flex-shrink</code> will only work when the total length of flex items are long enough to overflow the flex container itself.
+                    </p><br>
+                    <p>CSS: </p>
+                    <div class="code">
+                        <code>
+                            .flex-item { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;flex-basis: <span class="orange">40%</span>; <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;flex-shrink: <span class="orange">1</span>; <br>
+                            } <br>
+                            .flex-item:<span class="blue">nth-child(<span class="orange">2</span>)</span> { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;flex-shrink: <span class="orange">2</span>; <br>
+                            } <br>
+                            .flex-item:<span class="blue">nth-child(<span class="orange">4</span>)</span> { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;flex-shrink: <span class="orange">3</span>; <br>
+                            } <br>
+                        </code>
+                    </div><br>
+                    <p>Output:</p>
+                    <iframe src="../../tutorials/flexbox/flex-grow&shrink/demo2.html"></iframe><br>
+                    <p>
+                        4 containers, each having flex-basis of "40%" will overflow the flex container. (160% > 100%)
+                    </p>
+                </div>
+                <div>
+                    <h2>Syntax</h2>
+                    <div class="code">
+                        <code>
+                            flex-shrink: <span class="orange">('number')</span>;<br><br>
+                            flex-shrink: <span class="orange">inherit</span>;<br>
+                            flex-shrink: <span class="orange">initial</span>;<br>
+                            flex-shrink: <span class="orange">unset</span>;<br>
+                        </code>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <footer>
+            <a href="./flex_grow.html" class="button">Previous section</a>
+            <a href="./flex-direction.html" class="button">Next section</a>
+        </footer>
+    </div>
+</body>
+</html>

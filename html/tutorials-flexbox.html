@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style-tutorials.css">
+    <link rel="icon" href="../img/web_icon.svg">
+    <title>CSS Flexbox | Responsive Web Design</title>
+</head>
+<body>
+    <div class="fixed">
+        <div class="nav">
+            <a href="../index.html">Home</a>
+            <a href="tutorials.html" style="text-decoration: underline;">Tutorials</a>
+        </div>
+    </div>
+    <div class="container">
+        <section>
+            <h1>Flexbox</h1>
+            <!-- Introductory paragraph -->
+            <article>
+                <h2>Introduction</h2>
+                <p>
+                    CSS Flexbox is a web layout that has a high responsiveness, it is extremely functional when used with @media query.
+                </p>
+            </article>
+            <!-- Flexbox setup -->
+            <article>
+                <h2>How to set up a Flexbox container</h2>
+                <p>You need to define a flex container with the flex items inside before you use it. The example below is for clear demonstration only and you can define your flex container in your own way. <br>(but <code class="code-inline">display: flex</code> in the container is required)</p>
+                <p>HTML:</p>
+                <div class="code">
+                    <code>
+                        <<span class="blue">div</span> class="<span class="orange">flex-container</span>"><br>
+                        &emsp;&emsp;<<span class="blue">div</span> class="<span class="orange">flex-item</span>">1<&#47;<span class="blue">div</span>><br>
+                        &emsp;&emsp;<<span class="blue">div</span> class="<span class="orange">flex-item</span>">2<&#47;<span class="blue">div</span>><br>
+                        &emsp;&emsp;<<span class="blue">div</span> class="<span class="orange">flex-item</span>">3<&#47;<span class="blue">div</span>><br>
+                        &emsp;&emsp;<<span class="blue">div</span> class="<span class="orange">flex-item</span>">4<&#47;<span class="blue">div</span>><br>
+                        <&#47;<span class="blue">div</span>>
+                    </code>
+                </div><br>
+                <p>CSS:</p>
+                <div class="code">
+                    <code>
+                        .flex-container { <br>
+                            &emsp;&emsp;display: <span class="orange">flex</span>; <br>
+                            &emsp;&emsp;height: <span class="orange">100vh</span>; <br>
+                        } <br>
+                        .flex-item { <br>
+                            &emsp;&emsp;padding: <span class="orange">10px 15px</span>; <br>
+                            &emsp;&emsp;margin: <span class="orange">0 5px</span>; <br>
+                            &emsp;&emsp;height: <span class="orange">fit-content</span>; <br>
+                            &emsp;&emsp;background-color: <span class="orange">rosybrown</span>; <br>    
+                        }
+                    </code>
+                </div><br>
+                <p>Output:</p>
+                <iframe src="../tutorials/flexbox/demo0.html"></iframe><br>
+                <p>There you have it! A flex container is now created and we can start playing with it.</p>
+            </article>
+            <!-- Learn more -->
+            <article>
+                <h2>Learn More</h2><br>
+                <ol>
+                    <li>Aligning multiple flex items</li><br>
+                    <ul>
+                        <li><a href="./tutorials-flexbox/justify-content.html"><code class="code-inline">justify-content</code></a></li>
+                        <li><a href="./tutorials-flexbox/align-items.html"><code class="code-inline">align-items</code></a></li>
+                    </ul><br>
+                    <li>Aligning specific flex items</li><br>
+                    <ul>
+                        <li><a href="./tutorials-flexbox/align-self.html"><code class="code-inline">align-self</code></a></li>
+                    </ul><br>
+                    <li>Controlling the width of flex items</li><br>
+                    <ul>
+                        <li><a href="./tutorials-flexbox/flex_basis.html"><code class="code-inline">flex-basis</code></a></li>
+                        <li><a href="./tutorials-flexbox/flex_grow.html"><code class="code-inline">flex-grow</code></a></li>
+                        <li><a href="./tutorials-flexbox/flex-shrink.html"><code class="code-inline">flex-shrink</code></a></li>
+                    </ul><br>
+                    <li>Flex direction and wrapping of flex items</li><br>
+                    <ul>
+                        <li><a href="./tutorials-flexbox/flex-direction.html"><code class="code-inline">flex-direction</code></a></li>
+                        <li><a href="./tutorials-flexbox/flex-wrap.html"><code class="code-inline">flex-wrap</code></a></li>
+                    </ul><br>
+                </ol>
+            </article>
+            <!-- Center a div -->
+            <article>
+                <h2>How to center a div container</h2>
+                <div>
+                    <p>
+                        If you want to center a div, set both <code class="code-inline">justify-content</code> and <code class="code-inline">align-items</code>
+                        to <code class="code-inline">center</code>.
+                    </p>
+                    <div class="code">
+                        <code>
+                            .flex-container { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;justify-content: <span class="orange">center</span>; <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;align-items: <span class="orange">center</span>; <br>
+                            } <br>
+                        </code>
+                    </div>
+                    <p>Output:</p>
+                    <iframe src="../tutorials/flexbox/center-a-div.html"></iframe>
+                </div><br>
+            </article>  
+        </section>
+    </div>
+    <script src="../src/openDemo.js"></script>
+</body>
+</html>
