@@ -5,15 +5,16 @@ function openMediaDemo(id) {
 }
 
 function openFlexFdDemo(id) {
-    window.open(`../tutorials/flexbox/flex-direction/demo${id}.html`, "output", "width=850, height=600"); 
+    window.open(`../../tutorials/flexbox/flex-direction/demo${id}.html`, "output", "width=850, height=600"); 
 }
 
 function openFlexFwDemo(id) {
-    window.open(`../tutorials/flexbox/flex-wrap/demo${id}.html`, "output", "width=850, height=600"); 
+    window.open(`../../tutorials/flexbox/flex-wrap/demo${id}.html`, "output", "width=850, height=600"); 
 }
 
 function openRelDemo(id) {
     window.open(`../tutorials/relative units/demo${id}.html`, "output", "width=850, height=600");
 }
+
 
 
